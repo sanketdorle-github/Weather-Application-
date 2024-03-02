@@ -1,21 +1,4 @@
-/*const url = 'https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=Delhi';
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '3eace2c159mshb72cef5ffbd11aep1964e0jsn7ca048db3fd4',
-        'X-RapidAPI-Host': 'air-quality-by-api-ninjas.p.rapidapi.com'
-    }
-};
 
-//try {
-    async function()
-    const response = await fetch(url,options);
-    const result = await response.json();
-    console.log(result);
-} catch (error) {
-    console.error(error);
-}
-*/
 const options = {
   method: "GET",
   headers: {
@@ -35,7 +18,7 @@ async function getWeather(city) {
 
    
       cloud_pct.innerHTML = weatherData.cloud_pct;
-      // cloud_pct2.innerHTML = response.cloud_pct;
+    
       temp.innerHTML = weatherData.temp;
       temp2.innerHTML = weatherData.temp;
       feels_like.innerHTML = weatherData.feels_like;
@@ -70,15 +53,6 @@ Seattleweather.addEventListener("click", () => getWeather("Seattle"));
 Bangloreweather.addEventListener("click", () => getWeather("Bangalore"));
 japanweather.addEventListener("click", () => getWeather("Japan"));
 
-/*
-const options = {
-    method: "GET",
-    headers: {
-        "X-RapidAPI-Key": "3eace2c159mshb72cef5ffbd11aep1964e0jsn7ca048db3fd4",
-        "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
-    },
-};
-*/
 
 //Weather for :  shanghai;
 async function featchShangaiWeather(city) {
